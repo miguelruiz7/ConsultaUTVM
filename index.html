@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="favicons.ico">
+  <title>Consulta UTVM</title>
+  <meta name="description">
+  <meta name="keywords" content="Pingendo bootstrap example template wireframe cover">
+  <meta name="author" content="Pingendo">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="wireframe.css">
+</head>
+
+<body class="text-center bg-dark">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
+        <p class="navbar-brand mb-0 text-white"></p>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar14">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <a class="nav-link active" href="index.html">Inicio</a> </li>
+          <li class="nav-item"> <a class="nav-link active" href="aboutme.html">Acerca de mi</a> </li>
+        </ul>
+        <p class="d-none d-md-block lead mb-0  text-white"></p>
+      </div>
+    </div>
+  </nav>
+  <div class="p-3 h-100 d-flex flex-column">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="">
+          <h3>HISTORIAL ACADÉMICO</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <form method="GET" action="http://siin.utvm.edu.mx/siin3/controlEscolar/reportes/calificaciones/general_reportes.php?">
+            <fieldset>
+              <input type="hidden" name="lstReportes" &#61="" value="15" style="">
+              <input type="hidden" name="txtIdEmpleado" &#61="" value="E261">
+              <input type="hidden" name="cmbCuatrimestre" &#61="" value="">
+              <ul>
+                <h5>Matrícula:</h5>
+                <input type="text" id="s" name="txtMatricula" value="" size="7">
+                <font size="-1">
+                  <input type="hidden" id="s" name="txtNombre" value="" size="50">
+                  <font size="-1">
+                    <h4>Programa Educativo:</h4>
+                    <select name="cmbProgramaEducativo">
+                      <option value="11-T%C3%89CNICO%20SUPERIOR%20UNIVERSITARIO%20EN%20TECNOLOG%C3%8DAS%20DE%20LA%20INFORMACI%C3%93N&amp;cmbMes=0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">Tecnologías de la Información</option>
+                      <option value="9-TÉCNICO%20SUPERIOR%20UNIVERSITARIO%20EN%20MECATRÓNICA%20AREA%20AUTOMATIZACIÓN&amp;cmbMes=0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">Mecatrónica</option>
+                      <option value="3-TÉCNICO%20SUPERIOR%20UNIVERSITARIO%20EN%20ADMINISTRACIÓN&amp;cmbMes=0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">Administración</option>
+                      <option value="value3" selected="">Selecciona</option>
+                    </select>
+                  </font>
+                </font>
+              </ul>
+              <font size="-1">
+                <font size="-1">
+                  <input type="submit">
+                </font>
+              </font>
+            </fieldset>
+            <font size="-1">
+              <h4></h4>
+            </font>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-auto">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="mt-auto text-secondary">Creado por&nbsp;<a href="#" class="text-white">@migrzam7</a>, by <a href="#" class="text-white">UTVM</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" style=""></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
