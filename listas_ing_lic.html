@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="favicons.ico">
+  <title>Generador de Listas</title>
+  <meta name="description">
+  <meta name="keywords" content="">
+  <meta name="author" content="Miguel Ruiz Zamora">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="wireframe.css">
+</head>
+
+<body class="text-center bg-dark">
+  <div class="p-3 h-100 d-flex flex-column">
+    <div class="container mb-auto">
+      <div class="row">
+        <div class="mx-auto col-md-9">
+          <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="http://miguelruiz7.github.io/ConsultaUTVM/"><b>:)</b></a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ></span> </button>
+              <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="http://miguelruiz7.github.io/ConsultaUTVM/"><b>Inicio</b></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  <div class="p-3 h-100 d-flex flex-column">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="">
+          <h3>LISTAS INGERNIERÍA Y LICENCIATURA</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- FORMULARIO, A TRAVÉS DEL METODO GET PODEMOS OBTENER EL ENLACE LA CUAL NOS PERMITIO DESGLOSAR EL ENLACE-->
+          <form method="get" action="http://siin.utvm.edu.mx/siin/controlEscolar/reportes/alumnos/general_reportes.php?">
+          <fieldset>
+            <input type="hidden" name="lstReportes" &#61="" value="3">
+            <h4>Periodo:</h4>
+            <select name="cmbPeriodo">
+              <!--<option type="hidden" value="76*SEPTIEMBRE-DICIEMBRE-2021">SEPTIEMBRE-DICIEMBRE</option>-->
+              <option value="77*ENERO-ABRIL-2022">ENERO-ABRIL</option>
+              <option value="value3" selected="">Selecciona</option>
+            </select>
+            <!--LOS PROGRAMAS EDUCATIVOS SOLO UNICAMENTE TÉCNICOS SUPERIOR UNIVERSITARIO-->
+            <h4>Programa Educativo:</h4>
+            <select name="cmbProgramaEducativo">
+              <!-- <option value="value3">--TÉCNICO SUPERIOR UNIVERSITARIO--</option>
+              <option value="11-TÉCNICO SUPERIOR UNIVERSITARIO EN TECNOLOGÍAS DE LA INFORMACIÓN ">Tecnologías de la Información</option>
+              <option value="8-TÉCNICO SUPERIOR UNIVERSITARIO EN ENERGÍAS RENOVABLES ">Energías Renovables</option>
+              <option value="9-TÉCNICO SUPERIOR UNIVERSITARIO EN MECATRÓNICA AREA AUTOMATIZACIÓN ">Mecatrónica</option>
+              <option value="3-TÉCNICO SUPERIOR UNIVERSITARIO EN ADMINISTRACIÓN ">Administración</option>
+              <option value="20-TÉCNICO SUPERIOR UNIVERSITARIO EN GASTRONOMÍA ">Gastronomía</option>
+              <option value="6-TÉCNICO SUPERIOR UNIVERSITARIO EN TURISMO ">Turismo</option>
+              <option value="2-TÉCNICO SUPERIOR UNIVERSITARIO EN MECÁNICA ">Mecánica</option>
+              <option value="10-TÉCNICO SUPERIOR UNIVERSITARIO EN PROCESOS ALIMENTARIOS ">Procesos Alimentarios</option>-->
+              <option value="value3">--INGENIERÍA--</option>
+              <option value="62-INGENIERÍA EN DESARROLLO Y GESTIÓN DE SOFTWARE">Desarrollo y Gestion de Software</option>
+              <option value="57-INGENIERÍA EN TECNOLOGÍAS DE LA INFORMACIÓN">Tecnologías de la Información</option>
+              <option value="55-INGENIERÍA EN MECATRÓNICA">Mecatrónica</option>
+              <option value="52-INGENIERÍA EN METAL MECÁNICA">Metal Mecánica</option>
+              <option value="58-INGENIERÍA EN ENERGÍAS RENOVABLES">Energías Renovables</option>
+              <option value="58-INGENIERÍA EN PROCESOS BIOALIMENTARIOS">Procesos Bioalimentarios</option>
+              <option value="value3">--LICENCIATURA--</option>
+              <option value="60-LICENCIATURA EN GASTRONOMÍA">Gastronomía</option>
+              <option value="63-LICENCIATURA EN GESTIÓN DE NEGOCIOS Y PROYECTOS">Gestion de Negocios y Proyectos</option>
+              <option value="60-LICENCIATURA EN GESTIÓN Y DESARROLLO TURÍSTICO">Gestión y Desarrollo Turístico</option>
+              <option value="value3" selected="">Selecciona</option>
+            </select>
+            <h4>Cuatrimestre:</h4>
+            <select name="cmbCuatrimestre">
+             <!-- <option value="value3" >--TÉCNICO SUPERIOR UNIVERSITARIO--</option>
+              <option value="1-A">1</option>
+              <option value="2-A">2</option>
+              <option value="3-A">3</option>
+              <option value="4-A">4</option>
+              <option value="5-A">5</option>
+              <option value="6-A">6</option> -->
+              <option value="value3" >--LICENCIATURA E INGENIERÍA--</option>
+              <option value="7-A">7</option>
+              <option value="8-A">8</option>
+              <option value="9-A">9</option>
+              <option value="10-A">10</option>
+              <option value="11-A">11</option> <!-- ESTAS OPCIONES ESTÁN DESACTIVADAS MIENTRAS OBTENGA LAS CLAVES Y NOMBRES DE LAS INGENIERÍAS -->
+              <option value="value3" selected="">Selecciona</option>
+            </select>
+            <h4>Grupo:</h4>
+            <select name="cmbGrupo">
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="M">M</option>
+              <option value="N">N</option>
+              <option value="value3" selected="">Selecciona</option>
+            </select>
+            <h4>Unidad Académica:</h4>
+            <!-- UNIDAD A LA QUE PERTENECE EL ESTUDIANTE -->
+            <select name="cmbUnidadAcademica">
+              <option value="0*UNIVERSIDAD TECNOL%C3%93GICA DEL VALLE DEL MEZQUITAL">UNIVERSIDAD TECNOLÓGICA DEL VALLE DEL MEZQUITAL</option>
+              <option value="1*UNIDAD+ACADÉMICA+TEZONTEPEC">UNIDAD ACADÉMICA TEZONTEPEC</option>
+              <option value="value3" selected="">Selecciona</option>
+            </select>
+            <input type="hidden" name="cmbMes" &#61="" value="9-SEPTIEMRE">
+            <input type="submit">
+          </fieldset>
+       
+</form>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-auto">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="mt-auto text-secondary">Creado por&nbsp;<a href="#" class="text-white">@2130093_TI</a>, para <a href="#" class="text-white">UTVM_Comunity</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" style=""></script>
+ 
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
