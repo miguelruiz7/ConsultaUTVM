@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- PAGE settings -->
   <link rel="icon" href="favicons.ico">
-  <title>Historial Académico UTVM</title>
+  <title>Consulta UTVM</title>
   <meta name="description">
   <meta name="keywords" content="Pingendo bootstrap example template wireframe cover">
   <meta name="author" content="Pingendo">
@@ -22,22 +22,13 @@
         <div class="mx-auto col-md-9">
           <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
-              <a class="navbar-brand" href="http://miguelruiz7.github.io/ConsultaUTVM/"><b>:)</b></a>
+              <a class="navbar-brand" href="http://miguelruiz7.github.io/ConsultaUTVM/"><b>miguelruiz7</b></a>
               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" ></span> </button>
+                <span class="navbar-toggler-icon"></span> </button>
               <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link active" href="http://miguelruiz7.github.io/ConsultaUTVM/generador_listas"><b>Listas</b></a>
-                  </li>
-                  <li>
-                    <a class="nav-link active" href="http://miguelruiz7.github.io/ConsultaUTVM/comprobante"><b>Comprobante de Inscripción</b></a>
-                  </li>
-                  <li>
-                    <a class="nav-link active" href="http://e-siin.utvm.edu.mx/e-siin/"><b>E-SIIN UTVM</b></a>
-                  </li>
-                  <li>
-                    <a class="nav-link active" href="http://github.com/miguelruiz7/ConsultaUTVM/"><b>Repositorio</b></a>
                   </li>
                 </ul>
               </div>
@@ -46,94 +37,40 @@
         </div>
       </div>
     </div>
-  <div class="p-3 h-100 d-flex flex-column">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12" style="">
-          <h3>HISTORIAL ACADÉMICO</h3>
+    <div class="p-3 h-100 d-flex flex-column justify-content-center" style="" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" style="">
+            <h3>Consulta UTVM<br><br><br><br><br><br></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="mt-auto text-secondary"><a href="historial.html" class="text-white">Historial Académico</a></h3>
+              </div>
+              <div class="col-md-4">
+                <h3 class="mt-auto text-secondary"><a href="generador_listas.html" class="text-white">Listas</a></h3>
+              </div>
+              <div class="col-md-4">
+                <h3 class="mt-auto text-secondary"><a href="http://e-siin.utvm.edu.mx/" class="text-white">E-SIIN</a></h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <form method="GET" action="http://siin.utvm.edu.mx/siin3/controlEscolar/reportes/calificaciones/general_reportes.php?">
-            <fieldset>
-              <input type="hidden" name="lstReportes" &#61="" value="15" style="">
-              <input type="hidden" name="txtIdEmpleado" &#61="" value="E261">
-              <input type="hidden" name="cmbCuatrimestre" &#61="" value="">
-              <ul>
-                <h5>Matrícula:</h5>
-                <input type="text" id="s" name="txtMatricula" value="" size="7">
-                <font size="-1">
-                  <input type="hidden" id="s" name="txtNombre" value="" size="50">
-                  <font size="-1">
-                   <!-- <h4>Programa Educativo:</h4>
-                    <select name="cmbProgramaEducativo">
-                      <option value="11-T%C3%89CNICO%20SUPERIOR%20UNIVERSITARIO%20EN%20TECNOLOG%C3%8DAS%20DE%20LA%20INFORMACI%C3%93N&amp;cmbMes=0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">Tecnologías de la Información</option>
-                      <option value="8-TÉCNICO%20SUPERIOR%20UNIVERSITARIO%20EN%20ENERGÍAS%20RENOVABLES&amp;cmbMes=0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">Energías Renovables</option> 
-                      <option value="9-TÉCNICO%20SUPERIOR%20UNIVERSITARIO%20EN%20MECATRÓNICA%20AREA%20AUTOMATIZACIÓN&amp;cmbMes=0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">Mecatrónica</option>
-                      <option value="3-TÉCNICO%20SUPERIOR%20UNIVERSITARIO%20EN%20ADMINISTRACIÓN&amp;cmbMes=0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">Administración</option>
-                      <option value="20-TÉCNICO%20SUPERIOR%20UNIVERSITARIO%20EN%20GASTRONOMÍA&amp;cmbMes=0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">Gastronomía</option>
-                      <option value="6-TÉCNICO%20SUPERIOR%20UNIVERSITARIO%20EN%20TURISMO&amp;cmbMes=0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">Turismo</option>
-                      <option value="2-TÉCNICO%20SUPERIOR%20UNIVERSITARIO%20EN%20MECÁNICA&amp;cmbMes=0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">Mecánica</option>
-                      <option value="10-TÉCNICO%20SUPERIOR%20UNIVERSITARIO%20EN%20PROCESOS%20ALIMENTARIOS&amp;cmbMes=0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">Procesos Alimentarios</option>
-                      <option value="value3" selected="">Selecciona</option> -->
-                     <h4>Programa Educativo:</h4>
-            <select name="cmbProgramaEducativo">
-              <option value="value3">--TÉCNICO SUPERIOR UNIVERSITARIO--</option>
-              <option value="11-TÉCNICO SUPERIOR UNIVERSITARIO EN TECNOLOGÍAS DE LA INFORMACIÓN ">Tecnologías de la Información</option>
-              <option value="8-TÉCNICO SUPERIOR UNIVERSITARIO EN ENERGÍAS RENOVABLES ">Energías Renovables</option>
-              <option value="9-TÉCNICO SUPERIOR UNIVERSITARIO EN MECATRÓNICA AREA AUTOMATIZACIÓN ">Mecatrónica</option>
-              <option value="3-TÉCNICO SUPERIOR UNIVERSITARIO EN ADMINISTRACIÓN ">Administración</option>
-              <option value="20-TÉCNICO SUPERIOR UNIVERSITARIO EN GASTRONOMÍA ">Gastronomía</option>
-              <option value="6-TÉCNICO SUPERIOR UNIVERSITARIO EN TURISMO ">Turismo</option>
-              <option value="2-TÉCNICO SUPERIOR UNIVERSITARIO EN MECÁNICA ">Mecánica</option>
-              <option value="10-TÉCNICO SUPERIOR UNIVERSITARIO EN PROCESOS ALIMENTARIOS ">Procesos Alimentarios</option>
-              <option value="value3">--INGENIERÍA--</option>
-              <option value="62-INGENIERÍA EN DESARROLLO Y GESTIÓN DE SOFTWARE">Desarrollo y Gestion de Software</option>
-              <option value="57-INGENIERÍA EN TECNOLOGÍAS DE LA INFORMACIÓN">Tecnologías de la Información</option>
-              <option value="55-INGENIERÍA EN MECATRÓNICA">Mecatrónica</option>
-              <option value="52-INGENIERÍA EN METAL MECÁNICA">Metal Mecánica</option>
-              <option value="58-INGENIERÍA EN ENERGÍAS RENOVABLES">Energías Renovables</option>
-              <option value="58-INGENIERÍA EN PROCESOS BIOALIMENTARIOS">Procesos Bioalimentarios</option>
-              <option value="value3">--LICENCIATURA--</option>
-              <option value="60-LICENCIATURA EN GASTRONOMÍA">Gastronomía</option>
-              <option value="63-LICENCIATURA EN GESTIÓN DE NEGOCIOS Y PROYECTOS">Gestion de Negocios y Proyectos</option>
-              <option value="60-LICENCIATURA EN GESTIÓN Y DESARROLLO TURÍSTICO">Gestión y Desarrollo Turístico</option>
-              <option value="value3" selected="">Selecciona</option>
-              
-              <input type="hidden" name="cmbMes" &#61="" value="0-ENERO&amp;nombreserver=e-siin.utvm.edu.mx">
-                 
-                    </select>
-                  </font>
-                </font>
-              </ul>
-              <font size="-1">
-                <font size="-1">
-                  <input type="submit">
-                </font>
-              </font>
-            </fieldset>
-            <font size="-1">
-              <h4></h4>
-            </font>
-          </form>
+      <div class="container mt-auto">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="mt-auto text-secondary">Creado por&nbsp;<a href="#" class="text-white">@2130093_TI</a>, para <a href="#" class="text-white">UTVM_Comunity</a>.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container mt-auto">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="mt-auto text-secondary">Creado por&nbsp;<a href="https://github.com/miguelruiz7" class="text-white">@2130093_TI</a>, para <a href="#" class="text-white">UTVM_Comunity</a>.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        </div>
-      </div>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </div>
 </body>
 
