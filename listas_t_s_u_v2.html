@@ -1,0 +1,81 @@
+<head> 
+    <title>Consulta UTVM</title>
+<link href=style.css rel="stylesheet" type="text/css">  
+</head>
+<form method="get" action="http://siin.utvm.edu.mx/siin/controlEscolar/reportes/alumnos/general_reportes.php?" name="signin-form">   
+<div class="logoutvm">
+    <img src="logo.png" />
+</div>
+<h2> Listas de Tecnico Superior Universitario </h2>
+<div>
+      <input type="hidden" name="lstReportes" &#61="" value="3">
+      <select name="cmbPeriodo">
+        <!--<option type="hidden" value="76*SEPTIEMBRE-DICIEMBRE-2021">SEPTIEMBRE-DICIEMBRE</option>-->
+        <option value="77*ENERO-ABRIL-2022">ENERO-ABRIL</option>
+        <option value="value3" selected="">Periodo</option>
+      </select>
+      <!--LOS PROGRAMAS EDUCATIVOS SOLO UNICAMENTE TÉCNICOS SUPERIOR UNIVERSITARIO-->
+      <select name="cmbProgramaEducativo">
+        <option value="value3">--TÉCNICO SUPERIOR UNIVERSITARIO--</option>
+        <option value="11-TÉCNICO SUPERIOR UNIVERSITARIO EN TECNOLOGÍAS DE LA INFORMACIÓN ">Tecnologías de la Información</option>
+        <option value="8-TÉCNICO SUPERIOR UNIVERSITARIO EN ENERGÍAS RENOVABLES ">Energías Renovables</option>
+        <option value="9-TÉCNICO SUPERIOR UNIVERSITARIO EN MECATRÓNICA AREA AUTOMATIZACIÓN ">Mecatrónica</option>
+        <option value="3-TÉCNICO SUPERIOR UNIVERSITARIO EN ADMINISTRACIÓN ">Administración</option>
+        <option value="20-TÉCNICO SUPERIOR UNIVERSITARIO EN GASTRONOMÍA ">Gastronomía</option>
+        <option value="6-TÉCNICO SUPERIOR UNIVERSITARIO EN TURISMO ">Turismo</option>
+        <option value="2-TÉCNICO SUPERIOR UNIVERSITARIO EN MECÁNICA ">Mecánica</option>
+        <option value="10-TÉCNICO SUPERIOR UNIVERSITARIO EN PROCESOS ALIMENTARIOS ">Procesos Alimentarios</option>
+        <option value="value3" selected="">Programa Educativo</option>
+       <!-- <option value="value3">--INGENIERÍA--</option>
+        <option value="62-INGENIERÍA EN DESARROLLO Y GESTIÓN DE SOFTWARE">Desarrollo y Gestion de Software</option>
+        <option value="57-INGENIERÍA EN TECNOLOGÍAS DE LA INFORMACIÓN">Tecnologías de la Información</option>
+        <option value="55-INGENIERÍA EN MECATRÓNICA">Mecatrónica</option>
+        <option value="52-INGENIERÍA EN METAL MECÁNICA">Metal Mecánica</option>
+        <option value="58-INGENIERÍA EN ENERGÍAS RENOVABLES">Energías Renovables</option>
+        <option value="58-INGENIERÍA EN PROCESOS BIOALIMENTARIOS">Procesos Bioalimentarios</option>
+        <option value="value3">--LICENCIATURA--</option>
+        <option value="60-LICENCIATURA EN GASTRONOMÍA">Gastronomía</option>
+        <option value="63-LICENCIATURA EN GESTIÓN DE NEGOCIOS Y PROYECTOS">Gestion de Negocios y Proyectos</option>
+        <option value="60-LICENCIATURA EN GESTIÓN Y DESARROLLO TURÍSTICO">Gestión y Desarrollo Turístico</option>-->
+      </select>
+      <select name="cmbCuatrimestre">
+        <option value="value3" >--TÉCNICO SUPERIOR UNIVERSITARIO--</option>
+        <option value="1-A">1</option>
+        <option value="2-A">2</option>
+        <option value="3-A">3</option>
+        <option value="4-A">4</option>
+        <option value="5-A">5</option>
+        <option value="6-A">6</option>
+       <!-- <option value="value3" >--LICENCIATURA E INGENIERÍA--</option>
+        <option value="7-A">7</option>
+        <option value="8-A">8</option>
+        <option value="9-A">9</option>
+        <option value="10-A">10</option>
+        <option value="11-A">11</option> --> <!-- ESTAS OPCIONES ESTÁN DESACTIVADAS MIENTRAS OBTENGA LAS CLAVES Y NOMBRES DE LAS INGENIERÍAS -->
+        <option value="value3" selected="">Cuatrimestre</option>
+      </select>
+      <select name="cmbGrupo">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="M">M</option>
+        <option value="N">N</option>
+        <option value="value3" selected="">Grupo</option>
+      </select>
+      <!-- UNIDAD A LA QUE PERTENECE EL ESTUDIANTE -->
+      <select name="cmbUnidadAcademica">
+        <option value="0*UNIVERSIDAD TECNOL%C3%93GICA DEL VALLE DEL MEZQUITAL">UNIVERSIDAD TECNOLÓGICA DEL VALLE DEL MEZQUITAL</option>
+        <option value="1*UNIDAD+ACADÉMICA+TEZONTEPEC">UNIDAD ACADÉMICA TEZONTEPEC</option>
+        <option value="value3" selected="">Unidad Académica</option>
+      </select>
+      <input type="hidden" name="cmbMes" &#61="" value="9-SEPTIEMRE">
+        <!-- <input type="text" name="username" pattern="[a-zA-Z0-9]+" placeholder="Usuario" required />
+        <input type="password" name="password" placeholder="Contraseña" required /> -->
+    <button type="submit" name="" value="">Consultar</button>
+    <p class="messageadv">Solamente al generar tu consulta se genera un PDF automaticamente</p>
+</form>
+<p class= "message">©2022 Universidad Tecnologica del Valle del Mezquital; Todos los derechos reservados</p>
+</div>
